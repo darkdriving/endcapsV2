@@ -1,0 +1,62 @@
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	line-height: 1.4;
+}
+
+.row {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.thin {
+	max-width: 640px;
+}
+
+header { text-align: center; background: #2790cf; padding: 4rem 0; }
+	header h1 { font-size: 64px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; margin: 0; padding: 0; color: #fff; text-shadow: 1px 1px 3px rgba(0,0,0,.5); }
+
+section {
+
+}
+
+.mt-endcap, .mt-endcap * { box-sizing: border-box; }
+
+.mt-endcap {
+       position: relative;
+       padding: 0;
+       width: 100%;
+       max-width: 960px;
+       margin: 80px auto;
+       font-size: 16px;
+       -ms-touch-action: pan-y;
+	touch-action: pan-y;
+	-webkit-tap-highlight-color: transparent; }
+
+.mt-endcap.vertical { max-width: 240px; height: 1040px; }
+
+		.mt-endcap-title-top {  }
+		.mt-endcap-title-bottom { font-size: 11px; font-style: italic; font-weight: 300; }
+
+        .mt-endcap-list { overflow: hidden; }
+
+        .mt-endcap-track { position: relative; top: 0; left: 0; width: 2800px; } /* This width needs to be calculated based on max-width/number of visible items */
+        .mt-endcap-track.vertical { width: 240px; }
+
+        .mt-endcap-prev, .mt-endcap-next { position: absolute; z-index: 9000; display: block; top: 120px; line-height: 1; background: none; border: 0; outline: 0; font-size: 30px; }
+        .mt-endcap-prev:hover, .mt-endcap-next:hover { color: red; }
+        .mt-endcap-prev { left: -40px; }
+        .mt-endcap-next { right: -40px; }
+        .mt-endcap-prev[disabled], .mt-endcap-next[disabled] { opacity: .25; }
+
+        .mt-endcap-track { position: relative; opacity: 1; transform: translate3d(0px, 0px, 0px); -webkit-transition: all .75s ease-in-out; -moz-transition: all .75s ease-in-out; -o-transition: all .75s ease-in-out; transition: all .75s ease-in-out; } /* math here would add left/right margin equal to the width of the previous/next creative */
+       	.mt-endcap-item { display: block; float: left; width: 100%; max-width: 240px; padding: 0 10px; }
+            	.mt-endcap-track ul { margin: 0; padding: 0; }
+                    .mt-endcap-track ul li { margin: 0; padding: 0; width: 100%; list-style: none; text-align: center; }
+                           .mt-endcap-track ul li.mt-endcap-image { margin-bottom: 10px; -webkit-transition: all 1s ease-in-out; -moz-transition: all 1s ease-in-out; -o-transition: all 1s ease-in-out; -webkit-animation: cycle 5s infinite; -moz-animation: cycle 5s infinite; -o-animation: cycle 5s infinite; animation: cycle 5s infinite; }
+                            	.mt-endcap-track ul li.mt-endcap-image img { width: 100%; max-width: 240px; }
+                            .mt-endcap-track ul li.mt-endcap-title { font-weight: 700; font-size: 1em; }
+                            .mt-endcap-track ul li.mt-endcap-altprice { font-size: .8em; text-decoration: line-through; color: #ff0000; }
+                            .mt-endcap-track ul li.mt-endcap-price { font-size: .9em; }
+                            .mt-endcap-track ul li.mt-endcap-brand { font-size: .8em; }
